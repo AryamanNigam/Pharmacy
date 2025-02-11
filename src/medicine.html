@@ -11,10 +11,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
 </head>
 <body>
-    
     <div class= "container">
         <div class="header">
-
             <div class="logo-section">
                 <embed src="../assets/first-aid-kit-svgrepo-com.svg" height="60px" style="filter: invert(19%) sepia(85%) saturate(657%) hue-rotate(123deg) brightness(92%) contrast(90%);">
 
@@ -25,28 +23,103 @@
                 <div>Welcome,</div>
                 <div>John Doe</div>
             </div>
+
         </div>
         
         
-        <div class = "content">
+        <div class = "content"> 
             <div>Medicine</div>
             <hr>
 
             <div class="content-grid">
 
                 <div class="sorting-bar">
-                    Sorting Bar
+                    
+                    <div class="search">
+                        <embed src="../assets/search.svg" height="30px">
+                        <input type="text" placeholder="Search" id="search-bar">
+                    </div>
+                    
+                    <div class="select">
+                        <p>Start:</p>
+                        <select>
+                            <option>Cost (high to low)</option>
+                            <option>Cost (low to high)</option>
+                            <option>A-Z</option>
+                            <option>Z-A</option>
+                        </select>
+                    </div>
+
+
                 </div>
 
                 <div class="filters">
-                    Filter
+                    <div class="f-top">
+                        <div>Filters</div>
+                        <button>Clear Selection</button>
+                    </div>
+                    <hr>
+
+                    <div class="category-container">
+                        <div class="category-title">CATEGORIES</div>
+                        <div class="category-item">
+                            <input type="checkbox" id="painkillers">
+                            <label for="painkillers">Painkillers</label>
+                        </div>
+                        <div class="category-item">
+                            <input type="checkbox" id="antipyretics">
+                            <label for="antipyretics">Antipyretics</label>
+                        </div>
+                        <div class="category-item">
+                            <input type="checkbox" id="antifungal">
+                            <label for="antifungals">Antifungals</label>
+                        </div>
+                        <div class="category-item">
+                            <input type="checkbox" id="antiibiotic">
+                            <label for="antibiotic">Antibiotics</label>
+                        </div>
+                        <div class="category-item">
+                            <input type="checkbox" id="Antiviral">
+                            <label for="Antiviral">Antiviral</label>
+                        </div>
+                    </div>
+
+                    <div class="category-container">
+                        <div class="category-title">Type</div>
+                        <div class="category-item">
+                            <input type="checkbox" id="pills">
+                            <label for="pills">PIlls</label>
+                        </div>
+
+                        <div class="category-item">
+                            <input type="checkbox" id="syrup">
+                            <label for="syrup">Syrup</label>
+                        </div>
+
+                        <div class="category-item">
+                            <input type="checkbox" id="shampoo">
+                            <label for="shampoo">Shampoo</label>
+                        </div>
+                        <div class="category-item">
+                            <input type="checkbox" id="soap">
+                            <label for="soap">Soap</label>
+                        </div>
+                    </div>
+
+                    <div class="price-container">
+                        <div class="price-title" style="margin-bottom: -2px; font-size: 20px;">PRICE</div>
+                        <input type="range" min="0" max="10000" value="10000" class="slider" id="priceRange">
+                        <div class="slider-values">
+                            ₹<span id="priceValue">0 - 1,000+</span>
+                        </div>
+                    </div>
+
                 </div>
 
                 <div class="items">
-                    Items
+
                 </div>
             </div>
-
         </div>
 
         <div class="sidebar">
