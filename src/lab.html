@@ -4,11 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="med-styles.css">
-
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    
+    <link href="lab-styles.css" rel="stylesheet">
 </head>
 <body>
     <div class= "container">
@@ -28,7 +28,7 @@
         
         
         <div class = "content"> 
-            <div>Medicine</div>
+            <div>Lab Tests</div>
             <hr>
 
             <div class="content-grid">
@@ -61,61 +61,49 @@
                     <hr>
 
                     <div class="category-container">
-                        <div class="category-title">Categories</div>
-                        <div class="category-item">
-                            <input type="checkbox" id="Painkiller">
-                            <label for="Painkiller">Painkiller</label>
-                        </div>
-                        <div class="category-item">
-                            <input type="checkbox" id="Antipyretic">
-                            <label for="Antipyretic">Antipyretic</label>
-                        </div>
-                        <div class="category-item">
-                            <input type="checkbox" id="Antifungal">
-                            <label for="Antifungal">Antifungal</label>
-                        </div>
-                        <div class="category-item">
-                            <input type="checkbox" id="Antibiotic">
-                            <label for="Antibiotic">Antibiotic</label>
-                        </div>
-                        <div class="category-item">
-                            <input type="checkbox" id="Antiviral">
-                            <label for="Antiviral">Antiviral</label>
-                        </div>
-                        <div class="category-item">
-                            <input type="checkbox" id="Other">
-                            <label for="Other">Other</label>
-                        </div>
-                    </div>
-
-                    <div class="category-container">
                         <div class="category-title">Type</div>
+
                         <div class="category-item">
-                            <input type="checkbox" id="Pill">
-                            <label for="Pill">Pill</label>
+                            <input type="checkbox" id="Full-Body">
+                            <label for="Full-Body">Full Body</label>
                         </div>
 
                         <div class="category-item">
-                            <input type="checkbox" id="Syrup">
-                            <label for="Syrup">Syrup</label>
+                            <input type="checkbox" id="Derm">
+                            <label for="Derm">Dermatology</label>
                         </div>
 
                         <div class="category-item">
-                            <input type="checkbox" id="Shampoo">
-                            <label for="Shampoo">Shampoo</label>
+                            <input type="checkbox" id="Fluids">
+                            <label for="Fluids">Fluids</label>
                         </div>
 
                         <div class="category-item">
-                            <input type="checkbox" id="Cream">
-                            <label for="Cream">Cream</label>
+                            <input type="checkbox" id="Onco">
+                            <label for="Onco">Oncology</label>
+                        </div>
+
+                        <div class="category-item">
+                            <input type="checkbox" id="Ortho">
+                            <label for="Ortho">Othopedic</label>
+                        </div>
+
+                        <div class="category-item">
+                            <input type="checkbox" id="Immuno">
+                            <label for="Immuno">Scan</label>
+                        </div>
+
+                        <div class="category-item">
+                            <input type="checkbox" id="General">
+                            <label for="General">General</label>
                         </div>
                     </div>
 
                     <div class="price-container">
                         <div class="price-title" style="margin-bottom: -2px; font-size: 20px;">PRICE</div>
-                        <input type="range" min="0" max="500" value="0" class="slider" id="priceRange">
+                        <input type="range" min="0" max="5000" value="0" class="slider" id="priceRange">
                         <div class="slider-values">
-                            <span id="priceValue">₹0 - ₹500+</span>
+                            <span id="priceValue">₹0 - ₹5000</span>
                         </div>
                     </div>
 
@@ -123,289 +111,255 @@
 
                 <div class="items">
                     <div class="card">
-                        <img class= "card-image" src="../assets/meds/m1.jpeg">
+                        <img class= "card-image" src="../assets/test.jpg">
 
-                        <div class="med-name">
-                            Coenzyme
-                        </div>
-
-                        <div class="category">
-                            Antipyretic
+                        <div class="name">
+                            Blood Test
                         </div>
 
                         <div class="type">
-                            Pill
+                            General
                         </div>
 
                         <div class="cost">
-                            ₹100
+                            ₹800
                         </div>
 
-                        <button class="add">Add to Cart</button>
+                        <button class="add">Book Now</button>
                     </div>
 
                     <div class="card">
-                        <img class= "card-image" src="../assets/meds/m2.webp">
+                        <img class= "card-image" src="../assets/test.jpg">
 
-                        <div class="med-name">
-                            Burns
-                        </div>
-
-                        <div class="category">
-                            Antibiotic
+                        <div class="name">
+                            Lung Scan
                         </div>
 
                         <div class="type">
-                            Cream
+                            General
+                        </div>
+
+                        <div class="cost">
+                            ₹2000
+                        </div>
+
+                        <button class="add">Book Now</button>
+                    </div>
+
+                    <div class="card">
+                        <img class= "card-image" src="../assets/test.jpg">
+
+                        <div class="name">
+                            Chest Scan
+                        </div>
+
+                        <div class="type">
+                            General
+                        </div>
+
+                        <div class="cost">
+                            ₹3000
+                        </div>
+
+                        <button class="add">Book Now</button>
+                    </div>
+
+                    <div class="card">
+                        <img class= "card-image" src="../assets/test.jpg">
+
+                        <div class="name">
+                            Full Body Cancer Screen
+                        </div>
+
+                        <div class="type">
+                            Oncology
+                        </div>
+
+                        <div class="cost">
+                            ₹7500
+                        </div>
+
+                        <button class="add">Book Now</button>
+                    </div>
+
+                    <div class="card">
+                        <img class= "card-image" src="../assets/test.jpg">
+
+                        <div class="name">
+                            Stool Sample
+                        </div>
+
+                        <div class="type">
+                            Fluids
                         </div>
 
                         <div class="cost">
                             ₹250
                         </div>
 
-                        <button class="add">Add to Cart</button>
+                        <button class="add">Book Now</button>
                     </div>
 
                     <div class="card">
-                        <img class= "card-image" src="../assets/meds/m3.webp">
+                        <img class= "card-image" src="../assets/test.jpg">
 
-                        <div class="med-name">
-                            Pain Relief Gel
-                        </div>
-
-                        <div class="category">
-                            Painkiller
+                        <div class="name">
+                            Urine Sample
                         </div>
 
                         <div class="type">
-                            Syrup
+                            Fluids
                         </div>
 
                         <div class="cost">
-                            ₹300
+                            ₹250
                         </div>
 
-                        <button class="add">Add to Cart</button>
+                        <button class="add">Book Now</button>
                     </div>
 
                     <div class="card">
-                        <img class= "card-image" src="../assets/meds/m4.webp">
+                        <img class= "card-image" src="../assets/test.jpg">
 
-                        <div class="med-name">
-                            Ibrobrufen (20)
-                        </div>
-
-                        <div class="category">
-                            Painkiller
+                        <div class="name">
+                            Urine Sample
                         </div>
 
                         <div class="type">
-                            Pill
+                            Fluid
                         </div>
 
                         <div class="cost">
-                            ₹120
+                            ₹250
                         </div>
 
-                        <button class="add">Add to Cart</button>
+                        <button class="add">Book Now</button>
                     </div>
 
                     <div class="card">
-                        <img class= "card-image" src="../assets/meds/m5.webp">
+                        <img class= "card-image" src="../assets/test.jpg">
 
-                        <div class="med-name">
-                            Brufen
-                        </div>
-
-                        <div class="category">
-                            Antifungal
+                        <div class="name">
+                            Bone X-Ray
                         </div>
 
                         <div class="type">
-                            Cream
+                            Orthopedic
                         </div>
 
                         <div class="cost">
-                            ₹100
+                            ₹2000
                         </div>
 
-                        <button class="add">Add to Cart</button>
+                        <button class="add">Book Now</button>
                     </div>
 
                     <div class="card">
-                        <img class= "card-image" src="../assets/meds/m6.webp">
+                        <img class= "card-image" src="../assets/test.jpg">
 
-                        <div class="med-name">
-                            Dolo (15)
-                        </div>
-
-                        <div class="category">
-                            Antipyretic
+                        <div class="name">
+                            Ligament X-Ray
                         </div>
 
                         <div class="type">
-                            Pill
+                            Orthopedic
                         </div>
 
                         <div class="cost">
-                            ₹40
+                            ₹2000
                         </div>
 
-                        <button class="add">Add to Cart</button>
+                        <button class="add">Book Now</button>
                     </div>
 
                     <div class="card">
-                        <img class= "card-image" src="../assets/meds/m7.webp">
+                        <img class= "card-image" src="../assets/test.jpg">
 
-                        <div class="med-name">
-                            Paracetamol 
-                        </div>
-
-                        <div class="category">
-                            Antipyretic
+                        <div class="name">
+                            Diabetes Test
                         </div>
 
                         <div class="type">
-                            Pill
+                            General
                         </div>
 
                         <div class="cost">
-                            ₹200
+                            ₹900
                         </div>
 
-                        <button class="add">Add to Cart</button>
+                        <button class="add">Book Now</button>
                     </div>
 
                     <div class="card">
-                        <img class= "card-image" src="../assets/meds/m8.webp">
+                        <img class= "card-image" src="../assets/test.jpg">
 
-                        <div class="med-name">
-                            Dolo Suspension
-                        </div>
-
-                        <div class="category">
-                            Antipyretic
+                        <div class="name">
+                            Basic Check Up
                         </div>
 
                         <div class="type">
-                            Syrup
+                            General
                         </div>
 
                         <div class="cost">
-                            ₹80
+                            ₹1000
                         </div>
 
-                        <button class="add">Add to Cart</button>
+                        <button class="add">Book Now</button>
                     </div>
 
                     <div class="card">
-                        <img class= "card-image" src="../assets/meds/m9.webp">
+                        <img class= "card-image" src="../assets/test.jpg">
 
-                        <div class="med-name">
-                            Ketomac
-                        </div>
-
-                        <div class="category">
-                            Antifungal
+                        <div class="name">
+                            Advanced Check Up
                         </div>
 
                         <div class="type">
-                            Shampoo
+                            Full-Body
                         </div>
 
                         <div class="cost">
-                            ₹350
+                            ₹3000
                         </div>
 
-                        <button class="add">Add to Cart</button>
+                        <button class="add">Book Now</button>
                     </div>
 
                     <div class="card">
-                        <img class= "card-image" src="../assets/meds/m10.webp">
+                        <img class= "card-image" src="../assets/test.jpg">
 
-                        <div class="med-name">
-                            Dermadew
-                        </div>
-
-                        <div class="category">
-                            Antifungal
+                        <div class="name">
+                            Advanced Check Up
                         </div>
 
                         <div class="type">
-                            Shampoo
+                            Full-Body
                         </div>
 
                         <div class="cost">
-                            ₹300
+                            ₹3000
                         </div>
 
-                        <button class="add">Add to Cart</button>
+                        <button class="add">Book Now</button>
                     </div>
 
                     <div class="card">
-                        <img class= "card-image" src="../assets/meds/m11.webp">
+                        <img class= "card-image" src="../assets/test.jpg">
 
-                        <div class="med-name">
-                            Johnsons Soap
-                        </div>
-
-                        <div class="category">
-                            Other
+                        <div class="name">
+                            Biopsy
                         </div>
 
                         <div class="type">
-                            Pill
+                            Dermatology
                         </div>
 
                         <div class="cost">
-                            ₹300
+                            ₹2500
                         </div>
 
-                        <button class="add">Add to Cart</button>
-                    </div>
-
-                    <div class="card">
-                        <img class= "card-image" src="../assets/meds/m12.webp">
-
-                        <div class="med-name">
-                            Ethinlediol
-                        </div>
-
-                        <div class="category">
-                            Antiviral
-                        </div>
-
-                        <div class="type">
-                            Pill
-                        </div>
-
-                        <div class="cost">
-                            ₹100
-                        </div>
-
-                        <button class="add">Add to Cart</button>
-                    </div>
-
-                    <div class="card">
-                        <img class= "card-image" src="../assets/meds/m13.webp">
-
-                        <div class="med-name">
-                            Ethylisdiol
-                        </div>
-
-                        <div class="category">
-                            Antipyretic
-                        </div>
-
-                        <div class="type">
-                            Cream
-                        </div>
-
-                        <div class="cost">
-                            ₹200
-                        </div>
-
-                        <button class="add">Add to Cart</button>
+                        <button class="add">Book Now</button>
                     </div>
                 </div>
             </div>
@@ -471,9 +425,8 @@
                 </div>
             </div>
         </div>
-
-        <script src="meds.js"></script>
     </div>
 
+    <script src="labjs.js"></script>
 </body>
 </html>
