@@ -87,3 +87,24 @@ document.addEventListener("DOMContentLoaded", function () {
         filterCards();
     }
 });
+
+const addToCartButtons = document.querySelectorAll(".add");
+
+addToCartButtons.forEach(button => {
+    button.addEventListener("click", function () {
+        const card = button.closest(".card");
+
+        const item = {
+            name: card.querySelector(".name").textContent,
+            type: card.querySelector(".type").textContent,
+            cost: card.querySelector(".cost").textContent,
+            image: card.querySelector(".card-image").getAttribute("src")
+        };
+
+        let cartList = JSON.parse(localStorage.getItem("cartList")) || [];
+
+        cartList.push(item);
+
+        localStorage.setItem("cartList", JSON.stringify(cartList));
+    });
+});

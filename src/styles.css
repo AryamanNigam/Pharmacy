@@ -1,10 +1,13 @@
+:root{
+    --pharmacyColor: #107a5e;   
+}
+
 html, body {
     box-sizing: border-box;
     margin: 0px;
     padding: 0px;
     height: 100vh;
     max-width: 100%;
-    --pharmacyColor: #107a5e;   
 }
 
 .libre-baskerville-regular {
@@ -149,32 +152,6 @@ a:hover{
     white-space: nowrap; 
     overflow: hidden; 
     text-overflow: ellipsis; 
-}
-
-
-#spfp {
-    border-radius: 50px;
-    height: 40px;
-    width: 40px;
-}
-
-#profile-disp {
-    display: flex;
-    align-items: center;
-    padding: 1.5rem;
-    gap: 1.5rem;
-    justify-content: space-between;
-    min-width: 0;
-    flex-wrap: nowrap;
-}
-
-#profile-disp embed {
-    flex-shrink: 0; 
-    height: 30px;
-}
-
-#profile-disp > * {
-    max-width: 100%;
 }
 
 .intro {

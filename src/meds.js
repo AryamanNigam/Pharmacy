@@ -83,3 +83,28 @@ document.addEventListener("DOMContentLoaded", function () {
         filterCards();
     }
 });
+
+const addToCartButtons = document.querySelectorAll(".add");
+
+addToCartButtons.forEach(button => {
+    button.addEventListener("click", function () {
+        const card = button.closest(".card");
+
+        const item = {
+            name: card.querySelector(".med-name").textContent,
+            category: card.querySelector(".category").textContent,
+            type: card.querySelector(".type").textContent,
+            cost: card.querySelector(".cost").textContent,
+            image: card.querySelector(".card-image").getAttribute("src")
+        };
+
+        // ✅ Load from the correct key
+        let cartList = JSON.parse(localStorage.getItem("cartList")) || [];
+
+        // ✅ Add the item
+        cartList.push(item);
+
+        // ✅ Save back to the same key
+        localStorage.setItem("cartList", JSON.stringify(cartList));
+    });
+});
