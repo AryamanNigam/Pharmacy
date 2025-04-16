@@ -98,7 +98,8 @@ addToCartButtons.forEach(button => {
             name: card.querySelector(".name").textContent,
             type: card.querySelector(".type").textContent,
             cost: card.querySelector(".cost").textContent,
-            image: card.querySelector(".card-image").getAttribute("src")
+            image: card.querySelector(".card-image").getAttribute("src"),
+            itemType: "lab test"
         };
 
         let cartList = JSON.parse(localStorage.getItem("cartList")) || [];
