@@ -450,3 +450,7 @@ a:hover{
 .card:hover{
     transform: scale(1.02);
 }
+
+.add{
+    cursor: pointer;
+}

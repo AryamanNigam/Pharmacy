@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel='stylesheet' type='text/css' media='screen' href='consultations.css'>
+    <title>Document</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="container">
+        <div class="header">
+            <div class="logo-section">
+                <embed src="../assets/first-aid-kit-svgrepo-com.svg" height="60px" style="filter: invert(19%) sepia(85%) saturate(657%) hue-rotate(123deg) brightness(92%) contrast(90%);">
+                <div>Pharma</div>
+            </div>
+
+            <div class="welcome">
+                <div>Welcome,</div>
+                <div>Back!</div>
+            </div>
+        </div>
+
+        <div class="content">
+            <div class="page-heading">
+                <h1>Book A Consultation</h1>
+                <hr>
+            </div>
+
+            <div class="consultation-container">
+                <form action="https://formspree.io/f/xkgjajvy" method="POST" class="consultation-form">
+                  <label for="name">Full Name:</label>
+                  <input type="text" id="name" name="name" required>
+              
+                  <label for="email">Email Address:</label>
+                  <input type="email" id="email" name="email" required>
+              
+                  <label for="phone">Phone Number:</label>
+                  <input type="tel" id="phone" name="phone" required>
+              
+                  <label for="date">Preferred Date:</label>
+                  <input type="date" id="date" name="date" required>
+              
+                  <label for="time">Preferred Time:</label>
+                  <input type="time" id="time" name="time" required>
+              
+                  <label for="message">Reason for Consultation:</label>
+                  <textarea id="message" name="message" rows="5" required></textarea>
+              
+                  <button type="submit">Submit</button>
+                </form>
+              </div>  
+        </div>
+
+        <div class="sidebar">
+            <div class="sidebargroup1">
+
+                <div id="dash">
+                    <embed src="../assets/view-dashboard.svg" height="60px">
+                    <h1>Dashboard</h1>
+                </div>
+
+                <div class="group">
+                    <embed src="../assets/home-variant.svg" height="25px">
+                    <a href="/src/index.html">Home</a>
+                </div>
+
+                <div class="group">
+                    <embed src="../assets/cart-icon.svg" height="25px">   
+                    <a href="/src/cart.html">Cart</a>
+                </div>
+
+                <div class="group">
+                    <embed src="../assets/card-account-details.svg" height="25px">
+                    <a href="/src/profile.html">Profile</a>
+                </div>
+
+            </div>
+
+            <div class="sidebargroup2">
+                <div class="group">
+                    <embed src="../assets/meds.svg" height="25px">
+                    <a href="medicine.html">Medicine</a>
+                </div>
+            
+                <div class="group">
+                    <embed src="../assets/reshot-icon-blood-test-LZ8FP76JMK.svg" height="25px">
+                    <a href="lab.html">Lab Tests</a>
+                </div>
+
+                <div class="group">
+                    <embed src="../assets/hospital-svgrepo-com.svg" height="25px">
+                    <a href="consultations.html">Consulations</a>
+                </div>
+
+            </div>
+
+            <div class="sidebargroup3">
+                <div class="group">
+                    <embed src="../assets/cogs.svg">
+                        <a href="settings.html">Settings</a>
+                </div>
+
+                <div class="group">
+                    <embed src="../assets/help-box-multiple.svg">
+                    <a href="support.html">Support</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="consultations.js"></script>
+    
+</body>
+</html>

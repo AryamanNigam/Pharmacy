@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel='stylesheet' type='text/css' media='screen' href='cart.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='support.css'>
     <title>Document</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -26,12 +26,34 @@
         </div>
 
         <div class="content">
-            <div>Cart</div>
-            <hr>
-            <div id="empty-text"></div>
-            <div id="cart-items" class="cart-items">
-                
+            <div class="page-heading">
+                <h1>Book A Consultation</h1>
+                <hr>
             </div>
+
+            <div class="consultation-container">
+                <form action="https://formspree.io/f/xkgjajvy" method="POST" class="consultation-form">
+                  <label for="name">Full Name:</label>
+                  <input type="text" id="name" name="name" required>
+              
+                  <label for="email">Email Address:</label>
+                  <input type="email" id="email" name="email" required>
+              
+                  <label for="phone">Phone Number:</label>
+                  <input type="tel" id="phone" name="phone" required>
+              
+                  <label for="date">Preferred Date:</label>
+                  <input type="date" id="date" name="date" required>
+              
+                  <label for="time">Preferred Time:</label>
+                  <input type="time" id="time" name="time" required>
+              
+                  <label for="message">Reason for Consultation:</label>
+                  <textarea id="message" name="message" rows="5" required></textarea>
+              
+                  <button type="submit">Submit</button>
+                </form>
+              </div>  
         </div>
 
         <div class="sidebar">
@@ -80,7 +102,7 @@
             <div class="sidebargroup3">
                 <div class="group">
                     <embed src="../assets/cogs.svg">
-                    <a href="settings.html">Settings</a>
+                        <a href="settings.html">Settings</a>
                 </div>
 
                 <div class="group">
@@ -91,7 +113,7 @@
         </div>
     </div>
 
-    <script src="cart.js"></script>
+    <script src="consultations.js"></script>
     
 </body>
 </html>
