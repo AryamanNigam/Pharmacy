@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel='stylesheet' type='text/css' media='screen' href='support.css'>
-    <title>Document</title>
+    <title>Technical Support</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -27,33 +27,39 @@
 
         <div class="content">
             <div class="page-heading">
-                <h1>Book A Consultation</h1>
+                <h1>Technical Support</h1>
                 <hr>
             </div>
 
-            <div class="consultation-container">
-                <form action="https://formspree.io/f/xkgjajvy" method="POST" class="consultation-form">
-                  <label for="name">Full Name:</label>
-                  <input type="text" id="name" name="name" required>
-              
-                  <label for="email">Email Address:</label>
-                  <input type="email" id="email" name="email" required>
-              
-                  <label for="phone">Phone Number:</label>
-                  <input type="tel" id="phone" name="phone" required>
-              
-                  <label for="date">Preferred Date:</label>
-                  <input type="date" id="date" name="date" required>
-              
-                  <label for="time">Preferred Time:</label>
-                  <input type="time" id="time" name="time" required>
-              
-                  <label for="message">Reason for Consultation:</label>
-                  <textarea id="message" name="message" rows="5" required></textarea>
-              
-                  <button type="submit">Submit</button>
+            <div class="support-container">
+                <form class="form-elements gform" method="POST"
+                action="https://script.google.com/macros/s/AKfycbzVH8wrxBId9bijffyyYWW0b4A13sMqWs-roip0xMjuisGmbN0jK5JAYePJPuYGRS3eWw/exec">
+
+                <div class="form-elementss">
+                    <label for="name">Full Name:</label>
+                    <input type="text" id="name" name="name" required>
+
+                    <label for="email">Email Address:</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label for="phone">Phone Number:</label>
+                    <input type="tel" id="phone" name="phone" required>
+
+                    <label for="device">Device/Software:</label>
+                    <input type="text" id="device" name="device" required>
+
+                    <label for="issue">Issue Description:</label>
+                    <textarea id="issue" name="issue" rows="5" required></textarea>
+
+                    <button type="submit">Submit</button>
+                </div>
+
+                <div class="thankyou_message" style="display: none;">
+                    <h2>Thanks for reaching out! Our technical support team will get back to you soon!</h2>
+                </div>
                 </form>
-              </div>  
+
+            </div>
         </div>
 
         <div class="sidebar">
@@ -94,7 +100,7 @@
 
                 <div class="group">
                     <embed src="../assets/hospital-svgrepo-com.svg" height="25px">
-                    <a href="consultations.html">Consulations</a>
+                    <a href="consultations.html">Consultations</a>
                 </div>
 
             </div>
@@ -113,7 +119,6 @@
         </div>
     </div>
 
-    <script src="consultations.js"></script>
-    
+    <script data-cfasync="false" type="text/javascript" src="support.js"></script>    
 </body>
 </html>

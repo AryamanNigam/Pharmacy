@@ -195,43 +195,47 @@ a:hover{
     gap: 1rem;
 }
 
-.consultation-container {
+.consultation-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.form-elements {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+    width: 40vw;
     background-color: #f5f5f5;
     padding: 2rem;
     border-radius: 12px;
     max-width: 700px;
     margin: 2rem auto;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-  }
-  
-  .consultation-form {
-    display: flex;
-    flex-direction: column;
-    gap: 1.25rem;
-  }
-  
-  .consultation-form label {
+}
+
+.form-elements label {
     font-size: 16px;
     font-weight: 600;
     color: #333;
-  }
-  
-  .consultation-form input,
-  .consultation-form textarea {
+}
+
+.form-elements input,
+.form-elements textarea {
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 8px;
     font-size: 16px;
-  }
-  
-  .consultation-form input:focus,
-  .consultation-form textarea:focus {
+}
+
+.form-elements input:focus,
+.form-elements textarea:focus {
     border-color: #4CAF50;
     outline: none;
     box-shadow: 0 0 3px #4CAF50;
-  }
-  
-  .consultation-form button {
+}
+
+.form-elements button {
     padding: 12px;
     font-size: 18px;
     background-color: #4CAF50;
@@ -240,11 +244,12 @@ a:hover{
     border-radius: 8px;
     cursor: pointer;
     transition: background-color 0.3s ease;
-  }
-  
-  .consultation-form button:hover {
+}
+
+.form-elements button:hover {
     background-color: #45a049;
-  }
+}
+
   
 .page-heading {
     text-align: center;

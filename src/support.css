@@ -1,11 +1,11 @@
-:root{
-    --pharmacyColor: #107a5e;   
+:root {
+    --pharmacyColor: #107a5e;
 }
 
 html, body {
     box-sizing: border-box;
-    margin: 0px;
-    padding: 0px;
+    margin: 0;
+    padding: 0;
     height: 100vh;
     max-width: 100%;
 }
@@ -14,25 +14,24 @@ html, body {
     font-family: "Libre Baskerville", serif;
     font-weight: 400;
     font-style: normal;
-  }
-  
-  .libre-baskerville-bold {
+}
+
+.libre-baskerville-bold {
     font-family: "Libre Baskerville", serif;
     font-weight: 700;
     font-style: normal;
-  }
-  
-  .libre-baskerville-regular-italic {
+}
+
+.libre-baskerville-regular-italic {
     font-family: "Libre Baskerville", serif;
     font-weight: 400;
     font-style: italic;
-  }
-  
+}
 
 .container {
-    height: 100vh%;
+    height: 100vh;
     display: grid;
-    gap: 0px;
+    gap: 0;
     grid-template-columns: 1fr 6.5fr;
     grid-template-rows: 1fr 6fr;
     min-height: 100%;
@@ -47,21 +46,21 @@ html, body {
     grid-column: 2 / 6;
 }
 
-.welcome :first-child{
+.welcome :first-child {
     font-size: 25px;
 }
 
-.welcome :nth-child(2){
-    font-size:40px;
+.welcome :nth-child(2) {
+    font-size: 40px;
     font-weight: 800;
 }
 
-.welcome{
+.welcome {
     padding: 15px;
     padding-right: 25px;
 }
 
-.logo-section{
+.logo-section {
     display: flex;
     flex-direction: row;
     padding: 15px;
@@ -83,12 +82,12 @@ html, body {
     height: 100%;
 }
 
-a{
+a {
     color: black;
     text-decoration: none;
 }
 
-a:hover{
+a:hover {
     cursor: pointer;
     transform: scale(1.01);
 }
@@ -116,11 +115,11 @@ a:hover{
 .group {
     display: flex;
     flex-direction: row;
-    align-items: center; 
+    align-items: center;
     margin-left: 1.3rem;
-    gap: 0.5rem; 
-    padding: 0.5rem 1rem; 
-    font-size: 20px; 
+    gap: 0.5rem;
+    padding: 0.5rem 1rem;
+    font-size: 20px;
 }
 
 .group:hover {
@@ -132,26 +131,25 @@ a:hover{
     color: aliceblue;
 }
 
-
-.order:hover a{
+.order:hover a {
     transform: scale(1.1);
 }
 
 .group embed {
     flex-shrink: 0;
     height: 1.5rem;
-    width: 1.5rem; 
+    width: 1.5rem;
 }
 
-.order:hover button{
+.order:hover button {
     background-color: rgb(160, 212, 210);
 }
 
 .group div {
-    flex-grow: 1; 
-    white-space: nowrap; 
-    overflow: hidden; 
-    text-overflow: ellipsis; 
+    flex-grow: 1;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .intro {
@@ -195,43 +193,48 @@ a:hover{
     gap: 1rem;
 }
 
-.consultation-container {
+.support-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.form-elementss {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+    width: 40vw;
     background-color: #f5f5f5;
     padding: 2rem;
     border-radius: 12px;
     max-width: 700px;
     margin: 2rem auto;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-  }
-  
-  .consultation-form {
-    display: flex;
-    flex-direction: column;
-    gap: 1.25rem;
-  }
-  
-  .consultation-form label {
+    border: 0.5px solid grey;
+}
+
+.form-elements label {
     font-size: 16px;
     font-weight: 600;
     color: #333;
-  }
-  
-  .consultation-form input,
-  .consultation-form textarea {
+}
+
+.form-elements input,
+.form-elements textarea {
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 8px;
     font-size: 16px;
-  }
-  
-  .consultation-form input:focus,
-  .consultation-form textarea:focus {
+}
+
+.form-elements input:focus,
+.form-elements textarea:focus {
     border-color: #4CAF50;
     outline: none;
     box-shadow: 0 0 3px #4CAF50;
-  }
-  
-  .consultation-form button {
+}
+
+.form-elements button {
     padding: 12px;
     font-size: 18px;
     background-color: #4CAF50;
@@ -240,12 +243,12 @@ a:hover{
     border-radius: 8px;
     cursor: pointer;
     transition: background-color 0.3s ease;
-  }
-  
-  .consultation-form button:hover {
+}
+
+.form-elements button:hover {
     background-color: #45a049;
-  }
-  
+}
+
 .page-heading {
     text-align: center;
     margin-top: 2rem;
