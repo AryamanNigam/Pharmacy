@@ -30,7 +30,7 @@ html, body {
   
 
 .container {
-    height: 100vh%;
+    height: 100vh;
     display: grid;
     gap: 0px;
     grid-template-columns: 1fr 6.5fr;
@@ -189,72 +189,78 @@ a:hover{
     background-color: rgb(219, 209, 209);
     font-weight: bold;
 }
-
 .content {
-    background-color: whitesmoke;
-    gap: 1rem;
+    background-color: #f5f5f5;
+    padding: 2rem;
+    border-radius: 12px;
+    max-width: 1000px;
+    margin: 2rem auto;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    width: 80vw;
 }
 
-.content img{
-    height: 400px;
+h1 {
+    font-size: 36px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 2rem;
+    color: #333;
+}
+
+.content-grid {
+    display: flex;
+    justify-content: center;
     width: 100%;
 }
 
-.image-content{
-    position: relative;
-}
-
-.overlay{
-    position: absolute;
-    bottom: 200px;
-    left: 1000px;
-    font-size: 40px;
-    color: rgb(219, 209, 209);
-    font-weight: bold;
-}
-
-.order{
-    padding-top: 20px;
-    position: absolute;
-    left: 1000px;
-    bottom: 140px;
-    font-size: 40px;
-    font-weight: bold;
-}
-
-.order a{
-    color: rgb(219, 209, 209);
-}
-
-.pharmacy-services{
-    padding-top: 20px;
-    font-size: 50px;
-    text-align: center;
-    font-family: Libre Baskerville;
-}
-
-hr{
-    width: 50%;
-}
-
-.services{
-    display: flex;
-    gap: 20px;
-    padding: 20px;
-    justify-content: center;
-}
-
-.service-card{
+form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem 2rem;
+    width: 100%;
+    background-color: white;
+    padding: 2rem;
     border-radius: 10px;
-    cursor: grab ;
-    height: 250px;
-    width: 200px;
+    border: 1px solid #ddd;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
 }
 
-.service-card div{
-    font-size: 25px;
+label {
+    font-size: 18px;
+    font-weight: 600;
+    color: #666;
+    grid-column: span 2;
 }
 
-.service-card:hover{
-    transform: scale(1.02);
+input {
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+    width: 100%;
+    grid-column: span 2;
+}
+
+input:focus {
+    border-color: #4CAF50;
+    outline: none;
+    box-shadow: 0 0 4px #4CAF50;
+}
+
+button {
+    grid-column: span 2;
+    margin-top: 1rem;
+    padding: 12px;
+    font-size: 18px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: rgb(189, 189, 189);
 }
